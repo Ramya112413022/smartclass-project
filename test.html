@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reminder Test</title>
+</head>
+
+<body>
+
+    <h1>My Reminders</h1>
+
+    <div id="reminderList">
+        Loading...
+    </div>
+
+
+    <script>
+
+        fetch("get_reminder.php")
+
+            .then(response => {
+
+                console.log("Response received");
+
+                return response.json();
+
+            })
+
+            .then(data => {
+
+                console.log("Database data:", data);
+
+                let list =
+                    document.getElementById("reminderList");
+
+                list.innerHTML = "";
+
+
+                data.forEach(reminder => {
+
+                    let div =
+                        document.createElement("div");
+
+
+                    div.style.border =
+                        "1px solid black";
+
+                    div.style.padding =
+                        "15px";
+
+                    div.style.margin =
+                        "10px";
+
+
+                    div.innerHTML =
+
+                        "<h3>🔔 " +
+                        reminder.staff +
+                        "</h3>" +
+
+                        "<p>Subject: " +
+                        reminder.subject +
+                        "</p>" +
+
+                        "<p>Class: " +
+                        reminder.class_name +
+                        "</p>" +
+
+                        "<p>Message: " +
+                        reminder.message +
+                        "</p>" +
+
+                        "<p>Status: " +
+                        reminder.status +
+                        "</p>" +
+
+                        "<p>ID: " +
+                        reminder.id +
+                        "</p>";
+
+
+                    list.appendChild(div);
+
+                });
+
+            })
+
+
+            .catch(error => {
+
+                console.error(error);
+
+                document.getElementById(
+                    "reminderList"
+                ).innerHTML =
+                    "❌ Error: " + error;
+
+            });
+
+    </script>
+
+</body>
+
+</html>
