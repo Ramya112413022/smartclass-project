@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Smart Class</h2>
+
+        <div>
+            <a href="home.html">Home</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <section class="welcome">
+
+        <h1>Web Technology</h1>
+
+        <p>Learn the basics of creating websites.</p>
+
+        <h2>Topics</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Design</li>
+            <li>Web Applications</li>
+        </ul>
+
+        <br>
+
+        <a href="home.html">
+            <button>Back to Home</button>
+        </a>
+
+    </section>
+
+</body>
+</html>
