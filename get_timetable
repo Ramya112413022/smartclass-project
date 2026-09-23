@@ -1,0 +1,23 @@
+<?php
+header("Content-Type: application/json");
+
+$conn = new mysqli("localhost", "root", "", "smart_class");
+
+if ($conn->connect_error) {
+    echo json_encode(["error" => "Database connection failed"]);
+    exit();
+}
+
+$sql = "SELECT id, day, period_number, period_time, subject_name, faculty_name FROM timetable ORDER BY FIELD(day, 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'), period_number ASC";
+
+$result = $conn->query($sql);
+
+$timetable = [];
+while ($row = $result->fetch_assoc()) {
+    $timetable[] = $row;
+}
+
+echo json_encode($timetable);
+
+$conn->close();
+?>
