@@ -1,0 +1,22 @@
+<?php
+header("Content-Type: application/json");
+
+$conn = new mysqli("localhost", "root", "", "smart_class");
+
+if ($conn->connect_error) {
+    echo json_encode(["error" => "Database connection failed"]);
+    exit();
+}
+
+$sql = "SELECT id, name, subject, role, icon FROM faculty";
+$result = $conn->query($sql);
+
+$faculty = [];
+while ($row = $result->fetch_assoc()) {
+    $faculty[] = $row;
+}
+
+echo json_encode($faculty);
+
+$conn->close();
+?>
