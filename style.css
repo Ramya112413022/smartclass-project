@@ -1,0 +1,536 @@
+nav {
+    background-color: #1565c0;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.welcome {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.welcome h1 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+.welcome p {
+    color: #555;
+}
+
+.title {
+    text-align: center;
+    color: #1565c0;
+    margin-top: 30px;
+}
+
+.subjects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.card h3 {
+    color: #1565c0;
+}
+
+.card p {
+    color: #555;
+    min-height: 50px;
+}
+
+.card button {
+    width: 150px;
+}
+.about {
+    background-color: white;
+    margin-top: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #1565c0;
+}
+
+.about p {
+    color: #555;
+    max-width: 700px;
+    margin: 10px auto;
+}
+.contact {
+    background-color: #e8f4ff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    color: #1565c0;
+}
+
+.contact p {
+    color: #555;
+}
+footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+.login-page {
+    background-color: #e8f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    width: 350px;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #aaa;
+}
+
+.login-box h1 {
+    color: #1565c0;
+    margin-top: 0;
+}
+
+.login-box p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 97%;
+    padding: 12px;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #0d47a1;
+}
+/* Home Page Improvements */
+
+.welcome {
+    padding: 60px 20px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+.subjects {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px #aaa;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.about,
+.contact {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.dashboard {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.dashboard h2 {
+    color: #1565c0;
+}
+
+.dashboard-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.dashboard-box div {
+    background-color: white;
+    width: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.dashboard-box h3 {
+    color: #1565c0;
+    font-size: 28px;
+    margin: 5px;
+}
+
+.dashboard-box p {
+    color: #555;
+}
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+.faculty {
+    background-color: #e8f4ff;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.faculty h2 {
+    color: #1565c0;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.faculty-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.faculty-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.faculty-card {
+    background-color: white;
+    width: 210px;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #bbb;
+    transition: 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-8px);
+}
+
+.faculty-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.faculty-card h3 {
+    color: #1565c0;
+    margin: 10px 0;
+}
+
+.faculty-card p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.faculty-card span {
+    color: #777;
+    font-size: 13px;
+}
+.creative-timetable {
+    background-color: #e8f4ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.creative-timetable h2 {
+    color: #1565c0;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.timetable-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.day-card {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 20px #bbb;
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e8f4ff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.day-header h3 {
+    color: #1565c0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.day-header span {
+    background-color: #1565c0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.period-list {
+    display: grid;
+    gap: 15px;
+}
+
+.period-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+    border-radius: 15px;
+    background-color: #f7fbff;
+    border-left: 5px solid #1565c0;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.period-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px #ccc;
+}
+
+.period-number {
+    background-color: #1565c0;
+    color: white;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.period-time {
+    min-width: 120px;
+    color: #777;
+    font-size: 14px;
+}
+
+.period-info h4 {
+    margin: 0 0 5px;
+    color: #1565c0;
+    font-size: 18px;
+}
+
+.period-info p {
+    margin: 0;
+    color: #666;
+	/* ==========================================
+   STAFF PAGE
+   ========================================== */
+
+.staff-page {
+    min-height: 80vh;
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f7fb;
+}
+
+.staff-page h1 {
+    color: #2563eb;
+}
+
+.staff-page > p {
+    color: #555;
+    font-size: 17px;
+}
+
+
+/* Reminder Card */
+
+.reminder-card {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+.reminder-card h2 {
+    color: #2563eb;
+}
+
+.response-title {
+    margin-top: 30px;
+}
+
+
+/* Received Reminder */
+
+.received-reminder {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.received-reminder h3 {
+    color: #333;
+}
+
+.pending {
+    color: #eab308;
+    font-weight: bold;
+}
+
+.no-reminder {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    color: #777;
+}
+
+
+/* Response Buttons */
+
+.response-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.response-buttons button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.way-btn {
+    background: #16a34a;
+}
+
+.way-btn:hover {
+    background: #15803d;
+}
+
+.absent-btn {
+    background: #dc2626;
+}
+
+.absent-btn:hover {
+    background: #b91c1c;
+}
+
+.unavailable-btn {
+    background: #eab308;
+}
+
+.unavailable-btn:hover {
+    background: #ca8a04;
+}
+
+
+/* Response Message */
+
+#responseMessage {
+    margin-top: 25px;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+/* Current Response */
+
+.current-response {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ecfdf5;
+    border-radius: 10px;
+    color: #15803d;
+}
+
+}
